@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/ab3d8ada-5265-4ea4-be7a-3ec77661de3a/resourceGroups/APICongreso_group/providers/Microsoft.Web/sites/APICongreso",
+    "appService.deploySubpath": "src/app"
+}
