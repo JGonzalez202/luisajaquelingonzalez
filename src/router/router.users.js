@@ -62,10 +62,10 @@ router.put('/actualizar/usuarios/:idusuario', async (req,res)=>{
         nombre: datos.nombre,
         paterno: datos.paterno,
         materno: datos.materno,
-        telefono: datos.telefono,
+       telefono: datos.telefono,
         correo: datos.correo,
         contrasena: datos.contrasena,
-        id_perfil: datos.id_perfil,
+        d_perfil: datos.id_perfil,
         id_institutucion: datos.id_institutucion
             }, 
             {
