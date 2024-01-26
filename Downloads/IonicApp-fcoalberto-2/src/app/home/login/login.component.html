@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+
+      <ion-card-title>Login</ion-card-title>
+      <ion-card-subtitle>Todos los campos requeridos</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list>              
+            <ion-item>
+              <ion-input labelPlacement="floating" value="hi@ionic.io">
+                <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+              </ion-input>
+            </ion-item>
+
+          <ion-item>
+            <ion-input label="Password input" type="password" value="password"></ion-input>
+          </ion-item>
+         
+            <ion-button fill="clear" routerLink="/principal">Login</ion-button> 
+            <ion-button fill="clear" routerLink="/home/acceso">Registrate</ion-button> 
+            <ion-button fill="clear" routerLink="recupera">Recupera contraseña</ion-button> 
+
+      </ion-list>
+      <ion-header collapse="condense">
+        <ion-toolbar>
+    
+        </ion-toolbar>
+      </ion-header>
+    
+    </ion-card-content>
+  </ion-card>
+</ion-content>

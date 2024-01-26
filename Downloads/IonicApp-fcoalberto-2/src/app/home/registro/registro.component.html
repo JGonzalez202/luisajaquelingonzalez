@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    <img src="\assets\icon\logo2.png">
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-text-center">
+  <ion-card style="max-width: 500px; margin: auto;">
+    <ion-card-content>
+      <ion-icon name="person-circle-outline" size="1000px" color="primary" style="font-size: 8em; display: block; margin: 0 auto;"></ion-icon>
+      <form [formGroup]="loginForm">
+        <ion-list>
+          <ion-item>
+            <ion-input label="Nombre: " placeholder="Enter text" formControlName="nombre"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-input label="Matrícula: " type="number" placeholder="000" formControlName="matricula"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-input label="Password input" type="password" value="password" formControlName="password"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-input label="Email input" type="email" placeholder="email@domain.com" formControlName="email"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-input label="Telephone input" type="tel" placeholder="888-888-8888" formControlName="telefono"></ion-input>
+          </ion-item>
+        </ion-list>
+        
+        <ion-button (click)="consultarSocio()" expand="block" fill="clear" shape="round">
+          <ion-icon name="lock-closed" size="large" color="primary"></ion-icon>
+          Consultar
+        </ion-button>
+        <ion-button (click)="insertarSocio()" expand="block" fill="clear" shape="round">
+          <ion-icon name="lock-closed" size="large" color="primary"></ion-icon>
+          Insertar
+        </ion-button>
+        <ion-button (click)="actualizarSocio()" expand="block" fill="clear" shape="round">
+          <ion-icon name="lock-closed" size="large" color="primary"></ion-icon>
+          actualizar
+        </ion-button>
+        <ion-button (click)="borrarSocio()" expand="block" fill="clear" shape="round">
+          <ion-icon name="lock-closed" size="large" color="primary"></ion-icon>
+          Eliminar
+        </ion-button>
+        <ion-back-button defaultHref="/" color="primary" text="Regresar">      
+              <ion-label color="primary">Volver</ion-label>
+        </ion-back-button>
+        
+      </form>
+    </ion-card-content>
+    <ion-card-header>
+
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <div style="background-color: #343a40">
+    <ion-grid fixed>
+      <ion-row class="" size="12" fullscreen true>
+        <div style="color: white; text-align: center; font-weight: bold;">
+          <ion-col size="3">
+            CONTACTO:<br>
+            Av. Tecnológico S/N C.P. 55210 Col. Valle de Anáhuac, Ecatepec de Morelos<br>
+            Estado de México.<br>
+            Teléfono: 01 (55) 50 00 23 00.
+          </ion-col>
+        </div>
+        <ion-col size="3"></ion-col>
+        <div style="color: white; text-align: center; font-weight: bold;">
+          <ion-col size="3">
+            ENCUÉNTRANOS EN LAS REDES<br>
+            <a href="https://www.facebook.com/FamiliaTESE">
+              <img src="\assets\icon\face1.png">
+            </a><br>
+            <a href="https://www.youtube.com/channel/UC-QmepRifyoSZ3m4xeqUulQ">
+              <img src="\assets\icon\youtube1.ico">
+            </a>
+          </ion-col>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
+  </ion-toolbar>
+</ion-footer>

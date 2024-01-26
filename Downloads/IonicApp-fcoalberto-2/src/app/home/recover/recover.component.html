@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>¿Olvidaste tu contraseña?</ion-card-title>
+        </ion-card-header>
+        <ion-item>
+
+          <ion-icon name="lock-open-outline"></ion-icon>
+          <ion-item>
+            <ion-input labelPlacement="floating" >
+              <div slot="label">Ingresa tu correo para recueperar tu contraseña <ion-text color="danger">(Required)</ion-text></div>
+            </ion-input>
+          </ion-item>
+          <ion-button fill="clear"> Recuperar</ion-button>
+          <ion-button fill="clear" routerLink=""> Regresar</ion-button>
+
+        </ion-item>
+
+      </ion-card>
+
+    </ion-list>
+  </ion-list>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+
+    </ion-toolbar>
+  </ion-header>
+
+</ion-content>
